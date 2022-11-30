@@ -1,0 +1,53 @@
+Source: coinor-bonmin
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Section: science
+Priority: optional
+Build-Depends: coinor-libcbc-dev (>= 2.9),
+               coinor-libipopt-dev (>= 3),
+               debhelper-compat (= 10),
+               doxygen,
+               graphviz,
+               libbz2-dev,
+               liblapack-dev,
+               pkg-config,
+               zlib1g-dev,
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/science-team/coinor-bonmin
+Vcs-Git: https://salsa.debian.org/science-team/coinor-bonmin.git
+Homepage: https://projects.coin-or.org/Bonmin
+
+Package: coinor-libbonmin4
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Multi-Arch: same
+Description: COIN-OR mixed integer programming
+ Bonmin (Basic Open-source Nonlinear Mixed INteger programming) is an
+ open-source code for solving general MINLP (Mixed Integer NonLinear
+ Programming) problems.
+ .
+ Bonmin is part of the larger COIN-OR initiative (Computational Infrastructure
+ for Operations Research) and can be used with other COIN-OR packages that
+ make use of cuts, such as the mixed-integer linear programming solver Cbc.
+ .
+ This package contains the binaries and libraries.
+
+Package: coinor-libbonmin-dev
+Architecture: any
+Section: libdevel
+Depends: coinor-libbonmin4 (= ${binary:Version}),
+         coinor-libcbc-dev (>= 2.9),
+         coinor-libipopt-dev (>= 3),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Multi-Arch: same
+Description: COIN-OR mixed integer programming (developer files)
+ Bonmin (Basic Open-source Nonlinear Mixed INteger programming) is an
+ open-source code for solving general MINLP (Mixed Integer NonLinear
+ Programming) problems.
+ .
+ Bonmin is part of the larger COIN-OR initiative (Computational Infrastructure
+ for Operations Research) and can be used with other COIN-OR packages that
+ make use of cuts, such as the mixed-integer linear programming solver Cbc.
+ .
+ This package contains the header files for developers.

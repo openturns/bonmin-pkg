@@ -1,0 +1,3 @@
+usr/lib/*/libbonmin*.so
+usr/include/coin/*.h*
+/usr/lib/*/pkgconfig/bonmin*.pc
