@@ -7,18 +7,6 @@ Files: *
 Copyright: 2014-2016 Airbus Group SAS 
 License: GPL-2+
 
-Files: src/cluster_assembly_function.cpp
-       src/cluster_assembly_function.hpp
-       src/engine_settings.hpp
-       src/iengine.hpp
-Copyright: 2019 Airbus S.A.S.
-License: GPL-2+
-
-Files: src/json.cpp
-       src/json.hpp
-Copyright: 2014-2017 Airbus SAS
-License: GPL-2+
-
 Files: debian/*
 Copyright: 2014 Julien Schueller
            2022 Pierre Gruet <pgt@debian.org>
